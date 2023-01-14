@@ -15,7 +15,11 @@ datetime <- strptime(paste(powersub$Date, powersub$Time, sep=" "), "%d/%m/%Y %H:
 
 globalActivePower <- as.numeric(powersub$Global_active_power)
 
+
 #Creating the graph
 png("plot2.png", width=480, height=480)
 plot(datetime, globalActivePower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
+
+#Run getOption("device") to show plot
+getOption("device")

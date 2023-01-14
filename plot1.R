@@ -14,3 +14,7 @@ hist(powersub[,3], col="red", main = "Global Active Power", xlab = "Global Activ
 #Saving as 480 x480 PNG file
 png("plot1.png", width=480, height=480)
 dev.off()
+
+#Run getOption("device") to show plot
+getOption("device")
+
